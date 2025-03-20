@@ -538,7 +538,8 @@
     % Define local style for the label
     \tikzset{LocalLabel/.style={label = {[LabelStyle, LocalVertexFontColor,
           LocalVertexFontSize, LocalVertexFontScale, label
-          distance=\cmdNW@vertex@distance]\cmdNW@vertex@position:\vertex@Label}}}
+          distance=\cmdNW@vertex@distance, label
+          position=\cmdNW@vertex@position]\vertex@Label}}}
     \ifthenelse{\equal{\cmdNW@vertex@layer}{}}{
       \protected@edef\@tempa{%
         \noexpand\node[\vstyle,LocalVertexSize,LocalVertexOpacity,LocalVertexFill,LocalVertexShape,LocalLabel,\cmdNW@vertex@style,LocalPseudo](#1)%
